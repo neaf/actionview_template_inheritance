@@ -9,5 +9,5 @@ Gem::Specification.new do |s|
     "lib/actionview_template_inheritance.rb"
   ]
   s.require_paths = ["lib"]
-  s.add_dependency("actionview", "~> 3.0")
+  s.add_dependency("actionpack", "~> 3.0")
 end
