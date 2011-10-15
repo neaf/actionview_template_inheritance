@@ -18,7 +18,7 @@ enhance_block(name, value = nil, block) - Allows you to append content to defaul
 clear_block(name) - Empties block defined in top level tempalte.
 
 = Example app
-
+{https://github.com/neaf/template_inheritance_example}[https://github.com/neaf/template_inheritance_example]
 
 = TODO
 
