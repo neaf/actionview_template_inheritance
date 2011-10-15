@@ -26,6 +26,11 @@ clear_block(name) - Empties block defined in top level tempalte.
 * Write some tests, better documentation?
 * Gather feedback to make it feel less shaky for adopters.
 
+= Some more reading
+
+* {Django template inheritance documentation}[https://docs.djangoproject.com/en/dev/topics/templates/#template-inheritance]
+* {Template inheritance page on Rango framework wiki}[https://github.com/botanicus/rango/wiki/template-inheritance]
+
 == Credits
 
 The gem is loosely based on a fragment posted in following blog post: {Like that but with this: view inheritance in Rails}[http://inventivelabs.com.au/weblog/post/like-that-but-with-this-view-inheritance-in-rails] by Inventive Labs.
