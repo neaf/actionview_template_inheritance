@@ -4,6 +4,7 @@ Gem::Specification.new do |s|
   s.date = %q{2011-10-15}
   s.summary = %q{A set of methods implementing django-like template inheritance in ActionView.}
   s.authors = ["Tomasz Werbicki"]
+  s.homepage = "https://github.com/neaf/actionview_template_inheritance"
   s.files = [
     "Gemfile",
     "lib/actionview_template_inheritance.rb"
