@@ -1,0 +1,31 @@
+== ActionView django-like template inheritance
+
+A gem that provides a set of helpers method to implement partial functionality of {django template inheritance}[https://docs.djangoproject.com/en/dev/topics/templates/#template-inheritance].
+
+= Things to keep in mind when playing around
+
+* Rendered top-level template will be passed with yield to your standard Rails layout. Remove your layout file or/and put "layout nil" to your controller that uses inheritance (ApplicationController?).
+* If you're not in top-level template and don't expect your value to render at this point you can use silient ruby embedding (<% %> instead of <%= %> in ERB and - instead of = in HAML) but it's safe to use <%=, = with every block. It'll keep working when you decide to make your template top-level.
+
+= Available methods
+
+inherit(template_string) - Template string is what you'd normally pass to render, relative to app/views, without extensions.
+
+block(name, value = nil, block) - Value or block are optional if it's a time to render your content defined in child templates.
+
+enhance_block(name, value = nil, block) - Allows you to append content to default value in child templates.
+
+clear_block(name) - Empties block defined in top level tempalte.
+
+= Example app
+
+
+= TODO
+
+* Add some support for super in block or block nesting to put things around a block in mid-level template.
+* Write some tests, better documentation?
+* Gather feedback to make it feel less shaky for adopters.
+
+== Credits
+
+The gem is loosely based on a fragment posted in following blog post: {Like that but with this: view inheritance in Rails}[http://inventivelabs.com.au/weblog/post/like-that-but-with-this-view-inheritance-in-rails] by Inventive Labs.
